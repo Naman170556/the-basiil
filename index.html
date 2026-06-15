@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Basiil | Pure Veg Restaurant Siliguri</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="navbar container">
+            <div class="logo">
+                <a href="#home">The Basiil<span class="veg-dot"></span></a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content container">
+            <span class="badge"><i class="fas fa-leaf"></i> 100% Pure Vegetarian</span>
+            <h1>Savor the Authentic Flavors</h1>
+            <p>Delicious Chinese, North Indian, and Fast Food crafted with passion.</p>
+            <div class="rating-box">
+                <span class="stars"><i class="fas fa-star"></i> 4.8 / 5.0</span>
+                <span class="reviews">(1.8k+ Google Reviews)</span>
+            </div>
+            <div class="hero-btns">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="https://wa.me/918167046888" target="_blank" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Chat With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about container">
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p>Welcome to <strong>The Basiil</strong>, Siliguri's premier destination for exquisite pure vegetarian dining. Located conveniently on the 1st Floor of City Centre Mall, right above Domino's, we bring you an unforgettable culinary journey combining traditional North Indian spices, vibrant Chinese wok-magic, and satisfying fast food favorites.</p>
+            <div class="features">
+                <div class="feature"><i class="fas fa-check-circle"></i> Pure Veg Kitchen</div>
+                <div class="feature"><i class="fas fa-check-circle"></i> Premium Mall Ambience</div>
+                <div class="feature"><i class="fas fa-check-circle"></i> Top Rated (4.8 Stars)</div>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="The Basiil Ambience">
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Explore Our Menu</h2>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="chinese">Chinese</button>
+                <button class="filter-btn" data-filter="north-indian">North Indian</button>
+                <button class="filter-btn" data-filter="fast-food">Fast Food</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Chinese -->
+                <div class="menu-item" data-category="chinese">
+                    <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=400&q=80" alt="Veg Noodles">
+                    <div class="menu-info">
+                        <h3>Veg Hakka Noodles <span class="veg-icon"></span></h3>
+                        <p>Classic wok-tossed noodles with crunchy colorful veggies.</p>
+                        <div class="menu-footer">
+                            <span class="price">₹180</span>
+                            <div class="quantity-controls" data-name="Veg Hakka Noodles" data-price="180">
+                                <button class="minus-btn">-</button>
+                                <span class="qty">0</span>
+                                <button class="plus-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="chinese">
+                    <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=400&q=80" alt="Chilli Paneer">
+                    <div class="menu-info">
+                        <h3>Chilli Paneer Dry <span class="veg-icon"></span></h3>
+                        <p>Battered paneer cubes tossed with bell peppers and spicy chili sauce.</p>
+                        <div class="menu-footer">
+                            <span class="price">₹240</span>
+                            <div class="quantity-controls" data-name="Chilli Paneer Dry" data-price="240">
+                                <button class="minus-btn">-</button>
+                                <span class="qty">0</span>
+                                <button class="plus-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- North Indian -->
+                <div class="menu-item" data-category="north-indian">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=400&q=80" alt="Paneer Butter Masala">
+                    <div class="menu-info">
+                        <h3>Paneer Butter Masala <span class="veg-icon"></span></h3>
+                        <p>Rich and creamy tomato-based gravy filled with cottage cheese cubes.</p>
+                        <div class="menu-footer">
+                            <span class="price">₹280</span>
+                            <div class="quantity-controls" data-name="Paneer Butter Masala" data-price="280">
+                                <button class="minus-btn">-</button>
+                                <span class="qty">0</span>
+                                <button class="plus-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="north-indian">
+                    <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=400&q=80" alt="Dal Makhani">
+                    <div class="menu-info">
+                        <h3>Dal Makhani <span class="veg-icon"></span></h3>
+                        <p>Slow-cooked black lentils enriched with butter and fresh cream.</p>
+                        <div class="menu-footer">
+                            <span class="price">₹220</span>
+                            <div class="quantity-controls" data-name="Dal Makhani" data-price="220">
+                                <button class="minus-btn">-</button>
+                                <span class="qty">0</span>
+                                <button class="plus-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fast Food -->
+                <div class="menu-item" data-category="fast-food">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80" alt="Veg Burger">
+                    <div class="menu-info">
+                        <h3>Cheese Crunch Burger <span class="veg-icon"></span></h3>
+                        <p>Crispy veg patty loaded with melting cheese and premium dressing.</p>
+                        <div class="menu-footer">
+                            <span class="price">₹120</span>
+                            <div class="quantity-controls" data-name="Cheese Crunch Burger" data-price="120">
+                                <button class="minus-btn">-</button>
+                                <span class="qty">0</span>
+                                <button class="plus-btn">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80" alt="Food 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=400&q=80" alt="Food 2"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=400&q=80" alt="Food 3"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80" alt="Food 4"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>Visit or Contact Us</h2>
+                <p class="contact-desc">Have a question or looking to reserve a table? Reach out to us or drop a message!</p>
+                <div class="info-list">
+                    <p><i class="fas fa-map-marker-alt"></i> 1st Floor, City Centre Mall, above Domino's E Block, Ujanu P, Siliguri, West Bengal 734010</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 8167046888</p>
+                    <p><i class="fas fa-clock"></i> 11:00 AM - 11:00 PM</p>
+                </div>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://maps.google.com/maps?q=The%20Basiil,%20City%20Centre%20Mall,%20Siliguri&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 The Basiil. All Rights Reserved. Crafted for Foodies.</p>
+    </footer>
+
+    <!-- Persistent Mobile Cart Bar (With Cooking Request Input) -->
+    <div id="cartBar" class="cart-bar">
+        <div class="cart-bar-content container">
+            <div class="cart-bar-top">
+                <span id="cartItemsCount">0 Items</span>
+                <span id="cartTotalBill">₹0</span>
+            </div>
+            <!-- Cooking Request Input Block -->
+            <div class="cooking-request-box">
+                <input type="text" id="cookingInstructions" placeholder="Any requests? (e.g., Make it spicy, less oil...)">
+            </div>
+            <button id="whatsappCheckoutBtn" class="btn btn-secondary">
+                <i class="fab fa-whatsapp"></i> Place Order via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
